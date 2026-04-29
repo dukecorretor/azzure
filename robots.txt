@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /obrigado.html
 Disallow: /quem-somos.html
 Disallow: /codigo-de-etica.html
-Sitemap: https://azzure.ezteccorretor.com.br//sitemap.xml
+Sitemap: https://azzure.ezteccorretor.com.br/sitemap.xml

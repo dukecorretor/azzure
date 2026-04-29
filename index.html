@@ -14,14 +14,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Title -->
-  <title>Azzure Osasco - Piscina 50m, Resort Life, Apartamentos 2-3 Suítes | EZTEC</title>
+  <title>Azzure Resort Life Osasco - Piscina 50m, Resort Life, Apartamentos 2-3 Suítes | EZTEC</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="favicon.png" type="image/png">
-  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="favicon.png" sizes="180x180">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
   <!-- Canonical -->
   <link rel="canonical" href="https://azzure.ezteccorretor.com.br/">
+  
+  <!-- Alternate links for mobile and desktop -->
+  <link rel="alternate" media="only screen and (max-width: 640px)" href="https://azzure.ezteccorretor.com.br/">
+  <link rel="alternate" media="screen and (min-width: 641px)" href="https://azzure.ezteccorretor.com.br/">
 
   <!-- Robots -->
   <meta name="robots" content="index, follow">
@@ -36,7 +42,7 @@
   <meta name="description" content="Azzure Osasco: Maior Resort Life com piscina olímpica 50m, 20+ áreas de lazer, apartamentos 2-3 suítes de 63-120m². Av. Bussocaba. Alto padrão, conforto e qualidade de vida.">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Azzure Osasco: Resort Life com Piscina 50m | EZTEC" />
+  <meta property="og:title" content="Azzure Resort Life Osasco: Piscina Olímpica 50m | EZTEC" />
   <meta property="og:description" content="Conheça Azzure: maior complexo de lazer em Osasco. Piscina olímpica 50m, piscina infantil, 20+ itens de lazer. Apartamentos 63-120m². Av. Bussocaba." />
   <meta property="og:image" content="https://azzure.ezteccorretor.com.br/banner-piscina-azzure.jpg" />
   <meta property="og:url" content="https://azzure.ezteccorretor.com.br/" />
@@ -47,7 +53,7 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Azzure Osasco: Resort Life com Piscina Olímpica 50m" />
+  <meta name="twitter:title" content="Azzure Resort Life Osasco: Piscina Olímpica 50m | EZTEC" />
   <meta name="twitter:description" content="Azzure: maior resort life de Osasco com piscina 50m, piscina infantil, 20+ áreas de lazer, apartamentos com alta qualidade. Na Av. Bussocaba." />
   <meta name="twitter:image" content="https://azzure.ezteccorretor.com.br/banner-piscina-azzure.jpg" />
   <meta name="twitter:url" content="https://azzure.ezteccorretor.com.br/" />
@@ -59,10 +65,14 @@
   {
     "@context": "https://schema.org",
     "@type": "Residence",
-    "name": "Azzure Resort Life Osasco",
+    "name": "Azzure Resort Life",
+    "alternateName": "Azzure Resort Life Osasco",
     "url": "https://azzure.ezteccorretor.com.br/",
     "logo": "https://azzure.ezteccorretor.com.br/favicon.png",
-    "image": "https://azzure.ezteccorretor.com.br/banner-piscina-azzure.jpg",
+    "image": [
+      "https://azzure.ezteccorretor.com.br/banner-pagina-de-produto-azzure-bg.jpg",
+      "https://azzure.ezteccorretor.com.br/azzure-osasco-fachada.jpg"
+    ],
     "description": "Azzure: Maior resort life de Osasco com piscina olímpica 50m, piscina infantil, 20+ áreas de lazer, apartamentos 2-3 suítes com alta qualidade",
     "address": {
       "@type": "PostalAddress",
@@ -71,6 +81,11 @@
       "addressRegion": "SP",
       "postalCode": "06000",
       "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-23.5309",
+      "longitude": "-46.7947"
     },
     "amenityFeature": [
       {"@type": "Text", "value": "Piscina Olímpica 50m"},
@@ -81,26 +96,34 @@
       {"@type": "Text", "value": "Alto Padrão"}
     ],
     "sameAs": [
-      "https://www.instagram.com/moved.eztec.osasco"
+      "https://www.instagram.com/moved.eztec.osasco",
+      "https://www.ezteccorretor.com.br"
     ],
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+55-11-95460-6125",
-      "contactType": "sales",
+      "contactType": "Sales",
       "areaServed": "BR",
       "availableLanguage": ["Portuguese"]
-    }
+    },
+    "priceRange": "$$$$"
   }
   </script>
 
   <!-- Google Fonts -->                     
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="preload" as="style">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="park avenue.css" />
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" defer />
+  
+  <!-- Preconnect para otimização de performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
 </head>
 <body>
 
@@ -375,7 +398,7 @@
 
   <div class="intro-ponto__container">
     <div class="intro-ponto__image">
-      <img src="azzure-osasco-fachada.jpg" alt="Fachada casa-nacional EZTEC" />
+      <img src="azzure-osasco-fachada.jpg" alt="Fachada do Azzure Resort Life - Empreendimento Osasco" loading="lazy" />
     </div>
   <div class="intro-ponto__text">
     <h2>O maior Resort Life de Osasco.</h2>
@@ -638,21 +661,21 @@
     <!-- Galeria: Apartamento (inicialmente ativa) -->
     <div class="carrossel-galeria active" id="apartamento">
       <button class="navegacao anterior" onclick="navegar('apartamento', -1)">❮</button>
-      <img class="carrossel-img" id="img-apartamento" src="azzure-ap1.jpg" alt="Imagem do Apartamento">
+      <img class="carrossel-img" id="img-apartamento" src="azzure-ap1.jpg" alt="Apartamento do Azzure Resort Life - Unidades de 63 a 120m²" loading="lazy">
       <button class="navegacao proxima" onclick="navegar('apartamento', 1)">❯</button>
     </div>
   
     <!-- Galeria: Plantas -->
     <div class="carrossel-galeria" id="plantas">
       <button class="navegacao anterior" onclick="navegar('plantas', -1)">❮</button>
-      <img class="carrossel-img" id="img-plantas" src="planta-meio.jpg" alt="Imagem">
+      <img class="carrossel-img" id="img-plantas" src="azzure-pl1.jpg" alt="Plantas do Azzure Resort Life" loading="lazy">
       <button class="navegacao proxima" onclick="navegar('plantas', 1)">❯</button>
     </div>
   
     <!-- Galeria: Lazer -->
     <div class="carrossel-galeria" id="lazer">
       <button class="navegacao anterior" onclick="navegar('lazer', -1)">❮</button>
-      <img class="carrossel-img" id="img-lazer" src="01-Lazer.png" alt="Imagem">
+      <img class="carrossel-img" id="img-lazer" src="azzure-lz1.jpg" alt="Áreas de lazer do Azzure Resort Life com piscina olímpica de 50m" loading="lazy">
       <button class="navegacao proxima" onclick="navegar('lazer', 1)">❯</button>
     </div>
 </section>
@@ -924,7 +947,7 @@
 <!-- Casa Nacional Eztec - Cards relacionados -->
 <div class="cards-estrategicos-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 32px; padding: 32px 0;">
   <div class="card h-100 shadow-sm" style="width:340px;">
-    <img src="reserva-jb-osasco-400x255-1.webp" class="card-img-top" alt="Reserva JB" style="width:100%;height:220px;object-fit:cover;">
+    <img src="reserva-jb-osasco-400x255-1.webp" class="card-img-top" alt="Reserva JB Osasco - 2 e 3 dormitórios" loading="lazy" style="width:100%;height:220px;object-fit:cover;">
     <div class="card-body d-flex flex-column">
       <h5 class="card-title">Reserva JB</h5>
       <p class="card-text">2 e 3 dorms. (com suíte)
@@ -934,7 +957,7 @@
   </div>
 
   <div class="card h-100 shadow-sm" style="width:340px;">
-    <img src="112109-moved-osasco-400x255-1.jpg" class="card-img-top" alt="Arkadio" style="width:100%;height:220px;object-fit:cover;">
+    <img src="112109-moved-osasco-400x255-1.jpg" class="card-img-top" alt="Moved Osasco Residence - Apartamentos 2 e 3 dormitórios" loading="lazy" style="width:100%;height:220px;object-fit:cover;">
     <div class="card-body d-flex flex-column">
       <h5 class="card-title">Moved Osasco Residence</h5>
       <p class="card-text">Apartamentos de 2 e 3 dorms. | 56 e 72 m²</p>
@@ -943,9 +966,7 @@
   </div>
 
   <div class="card h-100 shadow-sm" style="width:340px;">
-    <img src="cidade-maia-jardim-400x255-1.webp" class="card-img-top" alt="Cidade Maia Jardim" style="width:100%;height:220px;object-fit:cover;">
-    <div class="card-body d-flex flex-column">
-      <h5 class="card-title">Cidade Maia Jardim</h5>
+    <img src="cidade-maia-jardim-400x255-1.webp" class="card-img-top" alt="Cidade Maia Jardim - 3 e 4 dormitórios com até 122m²" loading="lazy" style="width:100%;height:220px;object-fit:cover;">
       <p class="card-text">3 e 4 Dorms.
 86 a 122 m² privativos</p>
       <a href="https://wa.me/5511954606125?text=Olá! Tenho interesse no empreendimento Cidade Maia Jardim." class="btn btn-danger mt-auto w-100">saiba mais</a>
@@ -1350,7 +1371,7 @@ document.addEventListener("DOMContentLoaded", function() {
   </footer>
   
   <!-- JavaScript -->
-  <script src="park avenue.js"></script>
+  <script src="park avenue.js" defer></script>
   <script>
     document.querySelector('.mini-carousel-prev').addEventListener('click', () => {
       document.querySelector('.mini-carousel').scrollBy({
